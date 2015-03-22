@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 
 
-    <script type="text/javascript">
+    <script type="text/javascript"> // Original Author:http://www.dreamincode.net/forums/topic/247361-simple-tic-tac-toe-using-html5-css3-and-javascript/
         //Global Variables
         var painted;
         var content;
@@ -17,7 +17,7 @@
         var squaresFilled = 0;
         var w;
         var y;
-        var inp = 999;
+        var inp = 999;// this is the input, defined as 999
 
         //Instanciate Arrays
         window.onload = function () {
@@ -38,7 +38,7 @@
         function canvasClicked(canvasNumber) {
             theCanvas = "canvas" + canvasNumber;
             console.log(canvasNumber);
-            inp = canvasNumber;
+            inp = canvasNumber; // the input gets the canvasnumber depending on click
             c = document.getElementById(theCanvas);
             cxt = c.getContext("2d");
 

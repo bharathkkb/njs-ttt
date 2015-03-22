@@ -21,7 +21,7 @@ form.submit(function (e) {
 socket.on('access', function (data) {
     if (data.access === "granted") {
 
-        if (inp != 999) {
+        if (inp != 999) {// inp is the input being passed
             window.alert("Send input");
             socket.emit('inp', {
                 input: inp,
