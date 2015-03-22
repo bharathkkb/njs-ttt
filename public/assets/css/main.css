@@ -1,0 +1,85 @@
+body{
+
+  text-align:center;
+  
+}
+
+.box{
+
+  text-align:left;
+  width:auto;
+  height:auto;
+  
+}
+
+h3{
+
+  position:relative;
+  -webkit-animation:h3Animation 5s; 
+  
+}
+
+h1{
+
+  position:relative;
+  -webkit-animation:h1Animation 5s; 
+  
+}
+
+h2{
+
+  position:relative;
+  -webkit-animation:h2Animation 5s; 
+  
+}
+
+canvas{
+
+  position:relative;
+  -webkit-animation:canvasAnimation 5s; 
+  
+}
+
+@-webkit-keyframes canvasAnimation {
+
+  0%   {-webkit-transform:rotate(90deg);left:0px; top:0px;}
+  
+}
+
+form.login {
+	position: fixed;
+	top: 50%;
+	max-height: 140px;
+	max-width: 390px;
+	width: 100%;
+	left: 50%;
+	margin: -70px 0 0 -195px;
+	text-align: center;
+	z-index: 2;
+	height: 100%;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 60px 0 0;
+}
+
+form.login span {
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+form.login input[type=text] {
+	position: relative;
+	left: -5px;
+	width: 160px;
+	height: 29px;
+	padding: 0 10px;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	background-color: rgba(255,255,255, 0.8);
+	border: 1px solid #C5C5C5;
+	border-radius: 2px;
+	margin-top: 26px;
+}
+
+
+

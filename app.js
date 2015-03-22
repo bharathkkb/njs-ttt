@@ -1,4 +1,5 @@
 var express = require('express');
+
 app = express();
 var port = process.env.PORT || 8080;
 var io = require('socket.io').listen(app.listen(port));
@@ -13,9 +14,9 @@ var tic = io.on('connection', function (socket) {
 
     });
 
-    socket.on('input', function (data) {
+    socket.on('inp', function (data) {
         if (data.key === pass) {
-            tic.emit('newinp', {
+            tic.emit('recinp', {
                 input: data.input
             });
         }
