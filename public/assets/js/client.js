@@ -20,7 +20,7 @@ form.submit(function (e) {
 });
 socket.on('access', function (data) {
     if (data.access === "granted") {
-       
+
         if (inp != 999) {
             window.alert("Send input");
             socket.emit('inp', {
@@ -32,7 +32,7 @@ socket.on('access', function (data) {
         socket.on('recinp', function (data) {
             var recin = data.input;
             window.alert(recin);
-           
+
 
         });
     }
