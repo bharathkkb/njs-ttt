@@ -1,7 +1,5 @@
 var socket = io();
-
 //get key
-
 var key = "";
 var form = $('form.login'),
     passbox = form.find('input[type=text]');
